@@ -1,9 +1,29 @@
+/* Wrap */
+.wrap{
+    display: flex;
+    flex-wrap: wrap; 
+    /* Faz a quebra do container/div da página */
+    margin-bottom: 20px;
+}
+
+.box{
+    height: 40px;
+    width: 33%;
+    border: 1px solid red;
+}
+
 /* Justify Content */
-.center {
+.center,
+.space-around,
+.space-between,
+.end {
     display: flex;
     margin-bottom: 20px;
 }
 
+.space-around .box,
+.space-between .box,
+.end .box,
 .center .box {
     width: 50px;
 }
@@ -12,3 +32,84 @@
     justify-content: center;
     background-color: red;
 }
+
+.space-around{
+    justify-content: space-around; 
+    /* Faz um espaçamento dos conteúdos levemente */
+    background-color: rgb(220, 220, 255);
+}
+.space-between{
+    justify-content: space-between;
+    /* Faz um espaçamento dos conteúdos entre si */
+    background-color: rgb(188, 255, 188); 
+}
+.end{
+    justify-content: end;
+    /* Faz um espaçamento dos conteúdos no final -> para direita*/
+}
+
+/* Align Items */
+
+.center,
+.align-center,
+.flex-end,
+.strech {
+    display: flex;
+    margin-bottom: 20px;
+    height: 200px;
+    border: 1px solid blue;
+}
+
+.align-center .box,
+.flex-end .box,
+.strech .box {
+    width: 50px;
+}
+
+.align-center{
+    align-items: center;
+    /* Faz com que o item fique centralizado verticalmente */
+}
+.flex-end{
+    align-items: flex-end; 
+    /* Faz com que o item fique no final da página mas não mudando o lado */
+}
+.strech{
+    align-items: stretch;
+    /* Strech faz o alongamento na página verticalmente */
+}
+
+.strech .box{
+    height: auto;
+}
+
+/* gap */
+
+.gap{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; /* CENTRALIZANDO HORIZONTALMENTE */
+    border: 1px solid green;
+    gap: 10px;
+}
+
+.gap .box{
+    width: 32%;
+}
+
+/* order */
+
+.order{
+    display: flex;
+}
+#one{
+    order: 1;
+}
+#two{
+    order: 2;
+}
+#three{
+    order: 3;
+}
+
+/* Grow */
