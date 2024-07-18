@@ -1,0 +1,14 @@
+/* Justify Content */
+.center {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.center .box {
+    width: 50px;
+}
+
+.center{
+    justify-content: center;
+    background-color: red;
+}

@@ -1,0 +1,23 @@
+h1{
+    color: black;
+    text-align: center;
+    text-decoration: double;
+
+}
+h2{
+    color: grey;
+    text-align: center;
+    box-shadow: 1px;
+
+}
+h3{
+    color: blanchedalmond;
+    text-align: center;
+    box-shadow: 5px;
+
+}
+h4{
+    background-color: aliceblue;
+    text-align: center;
+}
+/*comentário*/

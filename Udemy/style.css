@@ -1,0 +1,26 @@
+.paragroph{
+    background-color: black;
+    color: aqua;
+}
+#título{
+    background-color: aqua;
+    color: black;
+}
+/*
+CORES
+*/
+.color-name{
+    color: chartreuse;
+}
+
+.hex{
+    color: #55a398;
+}
+#img,
+#img2{
+    height: 400px;
+    width: 400px;
+    background-image:  url("https://i.pinimg.com/236x/f5/15/6c/f5156cdd489208f62d85cca35e5cdb97.jpg");
+    background-position: center;
+    background-size: cover;
+}

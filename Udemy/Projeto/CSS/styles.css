@@ -1,0 +1,105 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color:  #f2f2f2;
+}
+h1,h2,h3,h4{
+    color: #333;
+}
+p, label{
+    color: #444;
+}
+input{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+input[type="text"],
+input[type="number"],
+input[type="file"],
+input[type="date"]
+textarea{
+    width: 400px;
+}
+
+textarea{
+    padding: 10px 5px;
+
+}
+
+/* Cabeçalho */
+header{
+    height: 160px;
+    padding: 20px;
+    background-color: #673ab7;
+
+}
+header h3{
+    color: #fff;
+}
+/* Form Container */
+.form-container{
+    background-color: #fdfdfd;
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    top: -62px;
+}
+
+/* form header */
+.form-header{
+    border-bottom: 1px solid #dfdfdf;
+    height: 45px;
+}
+.form-header p{
+    color: #673ab7;
+    border: 2px solid #673ab7;
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    height: 45px;
+    line-height: 45px;
+}
+
+/* form body */
+.form-body{
+    padding: 30px;
+}
+
+.form-title{
+    margin-bottom: 15px;
+}
+
+.form-body p {
+    margin-bottom: 15px;
+}
+
+.required-field{
+    color: red;
+}
+.box-input{
+    margin-bottom: 35px;
+    
+}
+
+.block{
+    display: block;
+    
+}
+.optional-box{
+    display: inline-block;
+    margin: 0 30px 30px 0;
+
+}
+.optional-list li{
+    list-style: none;
+}
+.box-input p{
+    margin-bottom: 15px;
+}

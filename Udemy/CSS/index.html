@@ -1,0 +1,31 @@
+<!-- 
+Inline-> quando os estilos são adicionados no atributo;
+Internal-> quando css é acionado por tag;
+external-> quando é um arquivo separado para css;
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h2 {
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Inline -->
+    <p style="color: blue;">Parágrafo em azul.</p>
+    <h1 style="color: beige; font-size: large;">Título em bege</h1>
+    <!--
+        Internal
+    -->
+    <h2>Teste Internal</h2>
+    <!--External-->
+    <h3>Teste External</h3>
+</body>
+</html>
