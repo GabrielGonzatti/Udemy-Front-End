@@ -97,5 +97,24 @@ const multiplicationClosure = (n) => {
 const c1 = multiplicationClosure(5);
 const c2 = multiplicationClosure(10);
 
-console.log(c1(5))
-console.log(c2(10))
+// console.log(c1(5))
+// console.log(c2(10))
+
+//FATORIAL
+// let ret = 0;
+function factorial(x){
+    if(x === 0) {
+        return 1;
+    //Se x idêntico a zero, retorna 1
+    } else {
+        console.log(x)
+        ret = x * factorial(x-1)
+        //ele vai armazenando em ret o resultado de x vezes a chamada da função fatorial (x-1) até x ser igual a zero.
+        return ret //Fazendo X vezes 6X5X4X3X2X1 = result
+
+    }
+}
+
+const num = 6;
+const result = factorial(num);
+console.log(`O fatorial do número ${num} é ${result}`);
