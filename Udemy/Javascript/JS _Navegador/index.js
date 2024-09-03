@@ -67,3 +67,39 @@ console.log(primeiroElementoPorTag);
 
 const primeiroElementoClasse = document.getElementsByClassName('product')
 console.log(primeiroElementoClasse)
+
+// QUERY SELECTOR PODE: 
+
+    // Selecionar elementos por tag
+    // Selecionar elementos por id
+    // Selecionar elementos por class
+    // Selecionar elementos por seletores CSS (CSS Selectors)
+    // Selecionar elementos por seletores de ancestralidade (Parent, Child, Sibling)
+
+//insertBefore
+const title = document.getElementById('title')
+const p = document.createElement("p");
+p.textContent = "Novo título"; // INSERE TEXTO NO NOVO ELEMENTO
+const header = title.parentElement // ELEMENTO PAI
+header.insertBefore(p, title); // INSERE O NOVO ELEMENTO ANTES DO TÍTULO
+
+//appendChild
+
+const newParagraph = document.createElement('p')
+newParagraph.textContent = 'Novo parágrafo'
+document.body.appendChild(newParagraph)
+
+//replaceChild
+
+const h2 = document.createElement("h2");
+h2.textContent = "Meu novo Título!";
+
+header.replaceChild(h2, title);
+
+//createTextNode
+
+const myText = document.createTextNode("Texto Aleatório");
+const h3 = document.createElement("h3");
+h3.appendChild(myText);
+header.appendChild(h3);
+
