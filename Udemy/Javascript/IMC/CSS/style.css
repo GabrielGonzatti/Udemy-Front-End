@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lat", sans-serif;
+}
+body{
+    background-color: #090e22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+}
+.hide{
+    display: none !important;
+
+}
+
+.container{
+    min-height: 450px;
+    min-width: 450px;
+    background-color: #1d1e33;
+    padding: 2rem;
+    margin: 1rem;
+}
+
+/* IMC FORM */
+
+#calc-container{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#calc-container h2{
+    margin: 1rem;
+}
+
+.form-inputs{
+    font-weight: bold;
+    padding: 2rem;
+    background-color: #202238;
+    color: #fff;
+}
+
+.form-inputs input{
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.action-control{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    background-color: #383964;  
+    padding: 1rem;  
+}
+
+.action-control button{
+    background-color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: 2rem;
+    width: 6rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    border: none;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+
+}
+
+.action-control button:hover{
+    background-color: #383964;
+    color: #fff;
+}
+
+#clear-btn{
+    background-color: #444;
+    color: #fff;
+    transition: 0.3s;
+
+}
+
+#clear-btn:hover{
+    background-color: #383964;
+    color: #111111;
+}
+
+#back-btn{
+    background-color: #555;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: 2rem;
+    width: 6rem;
+    padding: 0.5rem;
+    margin: 1rem auto;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    border: none;
+}
+
+#back-btn:hover{
+    background-color: #666;
+    color: #fff;
+}
+
+/* table */
+
+#result-container{
+    text-align: center;
+    margin-top: 2rem;
+    background-color: #202238;
+    color: #fff;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+#imc-number{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#imc-info{
+    font-size: 1.4rem;
+    color: #ccc;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#result-container h3{
+    color: #ccccccb1;
+}
+
+#imc-table{
+    font-size: 0.8rem;
+    margin: 1.5rem auto;
+}
+
+#table-header{
+    color: #fff;
+    text-align: center;
+}
+
+.table-data{
+    padding-top: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#table-header, .table-data{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #ffffffbe;
+}
+
+#table-header h4, .table-data p{
+    flex: 1;
+}
+
+#table-header h4:nth-child(3), .table-data p:nth-child(3){
+    max-width: 80px;
+}
+
+#back-btn{
+    align-self: center;
+}
+
+.good{
+    color: #12db34;
+}
+.low{
+    color: #dbce12;
+}
+.medium{
+    color: #db6212;
+}
+.high{
+    color: #db1912;
+}
